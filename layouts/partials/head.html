@@ -34,4 +34,7 @@
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
   {{ end }}
+  {{ if .Site.Params.googleGlobalTag }}
+  {{ partial "google_global_tag.html" . }}
+  {{ end }}
 </head>
